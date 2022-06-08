@@ -8,18 +8,18 @@ const Pagination=({prev, next, onPrevious, onNext})=>{
         onNext();
     };
     return(
-        <nav className='my-5'>
-            <ul className='flex justify-center space-x-4'>
+        <nav className='flex justify-center p-11'>
+            <ul className='flex flex-row space-x-10'>
                 {prev ? (
                     <li className=''>
-                    <button type='button' className='bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded-full' onClick={handlePrevious}>
+                    <button type='button' className='w-20 border-4 border-sky-500 rounded-full transition duration-150 ease-in-out delay-150 bg-blue-400 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500' onClick={handlePrevious}>
                         Previous
                     </button>
                     </li>
                 ): null}
                 {next ? (
                     <li className=''>
-                        <button type='button' className='bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded-full' onClick={handleNext}>
+                        <button type='button' className='w-20 border-4 border-sky-500 rounded-full transition duration-150 ease-in-out delay-150 bg-blue-400 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500' onClick={handleNext}>
                             Next
                         </button>
                     </li>
